@@ -9,3 +9,8 @@ Ce code ne respecte pas le principe DIP, car la classe metier a une dependance a
 ceci implique que les deux ne peuvent pas étre dépoloyés séparément , ou même compilé séparément.  
 
 Unchamgement dans la classe LocalDateTime nécessite une recompilation de la classe metier.
+
+
+### Réponse 2 ###
+
+une solution est d'intercaler une iterface entre la classe metier et la classe affichage qui utilise la classe LocalDateTime
