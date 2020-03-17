@@ -16,12 +16,12 @@ public class AfficherMetier implements AffichageMetierInterface {
 	
 	/*affichage du log*/
 	public void afficherTemp( String desc) {
-		System.out.println (LocalDateTime.now()+  desc);
+		System.out.println (LocalDateTime.now() + desc);
 		
 	}
 	/*affichage du log avec Slf4j*/
     public void afficherTempSlf4j(String desc) {
-    	log.info(LocalDateTime.now()+ desc);
+    	log.info(LocalDateTime.now() + desc);
 		
 	}
 }
